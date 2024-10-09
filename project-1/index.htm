@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N °1</title>
+    <!--style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*body{
+            
+        }*/
+    </style--> <!-- como o codigo é pequeno pode usar "style tag" -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <!-- https://via.placeholder.com/150 -->
+
+        <img src="https://via.placeholder.com/150" alt="Imagem de Noticia">
+        <div class="card-content">
+            <div class="card-category">meio-ambiente</div>
+            <div class="card-title">As Consequencias do Aquecimento Global</div>
+            <p class="card-time" id="demo">01/01/01 01:01:01</p>
+        </div>
+    </div>
+    
+    <script>
+        // declaracao de variaveis
+        var data_e_hora_atual = new Date();
+        var mes = data_e_hora_atual.getMonth() + 1;
+        var dia = data_e_hora_atual.getDay();
+        var ano = data_e_hora_atual.getFullYear();
+
+        // uma pequena formatacao se o dia for menor que 10, colocar um zero para ficar melhor.
+        if (dia < 10){
+            dia = "0" + dia;
+        }
+        //var hora; var minuto; var segundo;
+
+        // imprimir no elemento com Id="demo" a data.
+        document.getElementById("demo").innerHTML = dia + "/" + mes + "/" + ano;
+
+    </script>
+</body>
+</html>
