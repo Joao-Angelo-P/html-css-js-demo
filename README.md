@@ -2,3 +2,4 @@
 Codes for frontend. HTML, CSS and JS pure and with some frameworks 
 
 - **Project 1 - Simple News's Card**
+- **Project 2 - Simple Topnav bar**
